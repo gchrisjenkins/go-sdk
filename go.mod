@@ -7,6 +7,7 @@ require (
 	github.com/btcsuite/btcutil v1.0.2
 	github.com/cosmos/go-bip39 v0.0.0-20180819234021-555e2067c45d
 	github.com/kava-labs/cosmos-sdk v0.38.3-stable.0.20200520223313-bfbe25d175da
+	github.com/kava-labs/go-sdk v0.0.0-00010101000000-000000000000 // indirect
 	github.com/kava-labs/tendermint v0.33.4-0.20200520221629-77480532c622
 	github.com/pkg/errors v0.9.1
 	github.com/spf13/cobra v1.0.0
@@ -27,4 +28,4 @@ replace github.com/tendermint/iavl => github.com/kava-labs/iavl v0.13.4-0.202005
 
 replace github.com/cosmos/cosmos-sdk => github.com/kava-labs/cosmos-sdk v0.38.3-stable.0.20200520223313-bfbe25d175da
 
-replace github.com/kava-labs/go-sdk => github.com/gchrisjenkins/go-sdk cjenkins-develop
+replace github.com/kava-labs/go-sdk => github.com/gchrisjenkins/go-sdk v0.1.7-0.20201013110923-3d7fd672393f
