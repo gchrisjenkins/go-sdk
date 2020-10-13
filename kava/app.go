@@ -92,3 +92,10 @@ func SetBech32AddressPrefixes(config *sdk.Config) {
 	config.SetBech32PrefixForValidator(Bech32MainPrefix+sdk.PrefixValidator+sdk.PrefixOperator, Bech32MainPrefix+sdk.PrefixValidator+sdk.PrefixOperator+sdk.PrefixPublic)
 	config.SetBech32PrefixForConsensusNode(Bech32MainPrefix+sdk.PrefixValidator+sdk.PrefixConsensus, Bech32MainPrefix+sdk.PrefixValidator+sdk.PrefixConsensus+sdk.PrefixPublic)
 }
+
+// SetBech32AddressPrefixes sets the global prefix to be used when serializing addresses to bech32 strings.
+func SetBech32AddressPrefixesFromMainPrefix(config *sdk.Config, mainPrefix string) {
+	config.SetBech32PrefixForAccount(mainPrefix, mainPrefix+sdk.PrefixPublic)
+	config.SetBech32PrefixForValidator(mainPrefix+sdk.PrefixValidator+sdk.PrefixOperator, mainPrefix+sdk.PrefixValidator+sdk.PrefixOperator+sdk.PrefixPublic)
+	config.SetBech32PrefixForConsensusNode(mainPrefix+sdk.PrefixValidator+sdk.PrefixConsensus, mainPrefix+sdk.PrefixValidator+sdk.PrefixConsensus+sdk.PrefixPublic)
+}
