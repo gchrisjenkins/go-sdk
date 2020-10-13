@@ -1,4 +1,4 @@
-module github.com/kava-labs/go-sdk
+module github.com/gchrisjenkins/go-sdk
 
 go 1.13
 
@@ -26,3 +26,5 @@ replace github.com/tendermint/tendermint => github.com/kava-labs/tendermint v0.3
 replace github.com/tendermint/iavl => github.com/kava-labs/iavl v0.13.4-0.20200520164545-88a15b563d3d
 
 replace github.com/cosmos/cosmos-sdk => github.com/kava-labs/cosmos-sdk v0.38.3-stable.0.20200520223313-bfbe25d175da
+
+replace github.com/kava-labs/go-sdk => github.com/gchrisjenkins/go-sdk cjenkins-develop
